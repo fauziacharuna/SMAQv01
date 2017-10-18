@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#EBEAE9</color>
+    <color name="colorPrimaryDark">#bcaaa4</color>
+    <color name="colorAccent">#D15368</color>
+
+    <color name="fullTransparent">#00000000</color>
+    <color name="transparentOverlay">#88000000</color>
+    <color name="transparentRedOverlay">#88C73935</color>
+
+    <!--<color name="mainMenuButtonBackground">#C73935</color>-->
+    <color name="mainMenuButtonBackground">#D15368</color>
+    <color name="mainMenuButtonBackgroundLight">#F4EAEC</color>
+    <color name="mainHeaderColor">#36AE7A</color>
+    <color name="mainHeaderShadowColor">#309C6E</color>
+    <color name="mainButtonColor">#d15368</color>
+    <color name="mainButtonDarkColor">#bc4b5d</color>
+    <color name="tabColor">#017C7D</color>
+    <color name="tabHighlightColor">#fdd072</color>
+    <color name="newsColor">#1b1720</color>
+    <color name="newsHighlightColor">#80D0CD</color>
+
+    <color name="bgToolbarNongkrongColor">#3D455C</color>
+    <color name="bgTabNongkrongColor">#D15368</color>
+
+    <color name="fabBackground">#00000000</color>
+    
+    <color name="year">#999999</color>
+    <color name="title">#222222</color>
+</resources>

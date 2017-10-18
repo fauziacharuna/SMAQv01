@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:text="@string/learning_subject_title_tryout_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textTryTitle" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_gravity="right|center_vertical"
+            android:gravity="right|center_vertical"
+            android:foregroundGravity="right|center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <CheckBox
+                android:text="@string/learning_subject_tryout_result"
+                android:visibility="invisible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:gravity="right|center_vertical"
+                android:foregroundGravity="right|center_vertical"
+                android:textSize="12sp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/checkBoxTryResult" />
+
+            <ImageView
+                android:layout_width="14sp"
+                android:layout_height="14sp"
+                android:scaleType="centerInside"
+                android:baselineAlignBottom="true"
+                android:layout_gravity="right|center_vertical"
+                android:gravity="right|center_vertical"
+                android:foregroundGravity="right|center_vertical"
+                app:srcCompat="@drawable/ic_material_tryout_key"
+                android:id="@+id/imageViewTryAnswer" />
+
+            <TextView
+                android:text="@string/learning_subject_tryout_answer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:gravity="right|center_vertical"
+                android:foregroundGravity="right|center_vertical"
+                android:textSize="12sp"
+                android:id="@+id/textViewTryAnswer" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,1714 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_profile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/TranslucentStatusBar"
+    tools:context="com.smaq.apps.smaqv01.ProfileActivity">
+
+    <FrameLayout
+        android:id="@+id/mainProfileContainer"
+        android:layout_width="0dp"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_height="260dp">
+
+        <ImageView
+            app:srcCompat="@drawable/bg_main_profile"
+            android:id="@+id/imageView5"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:cropToPadding="false"
+            android:adjustViewBounds="false"
+            android:scaleType="centerCrop" />
+
+    </FrameLayout>
+
+    <ImageButton
+        app:srcCompat="@drawable/bt_profile_back"
+        android:id="@+id/profileBackButton"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@null"
+        android:layout_marginTop="26dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp" />
+
+    <ImageButton
+        android:layout_height="32dp"
+        android:layout_width="wrap_content"
+        app:srcCompat="@drawable/bt_profile_edit_small"
+        android:id="@+id/profileEditButton"
+        tools:layout_constraintTop_creator="1"
+        app:layout_constraintTop_toTopOf="@+id/profileBackButton"
+        android:background="@null"
+        android:alpha="0.6"
+        app:layout_constraintRight_toRightOf="parent"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="@+id/profileBackButton"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp" />
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:id="@+id/profileSpacer"
+        app:layout_constraintTop_toTopOf="@+id/topProfileContainer"
+        app:layout_constraintLeft_toLeftOf="@+id/topProfileContainer"
+        app:layout_constraintRight_toRightOf="@+id/topProfileContainer"
+        android:layout_height="120dp"
+        android:background="@android:color/white">
+
+    </FrameLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/profileBackButton"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="@android:color/white"
+        android:id="@+id/topProfileContainer"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:weightSum="3"
+            android:id="@+id/profileSchoolContainer"
+            android:layout_height="60dp"
+            android:gravity="center_vertical|center_horizontal|center">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical|center_horizontal|center">
+
+                <TextView
+                    android:text="Nama Sekolah"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    tools:layout_constraintRight_creator="1"
+                    tools:layout_constraintLeft_creator="1"
+                    android:id="@+id/profileSchooltitle" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintRight_toRightOf="@+id/profileSchooltitle"
+                    app:layout_constraintLeft_toLeftOf="@+id/profileSchooltitle"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/profileSchooltitle"
+                    android:inputType="textPersonName"
+                    android:hint="Nama Sekolah"
+                    android:gravity="center"
+                    android:textSize="12sp"
+                    android:ems="10"
+                    android:backgroundTint="@android:color/black"
+                    android:visibility="invisible"
+                    android:id="@+id/editSchooltitle" />
+
+                <TextView
+                    android:text="Kelas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/profileSchooltitle"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="10sp"
+                    tools:layout_constraintRight_creator="1"
+                    tools:layout_constraintLeft_creator="1"
+                    android:id="@+id/profileSchooladdress" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintRight_toRightOf="@+id/profileSchooladdress"
+                    app:layout_constraintLeft_toLeftOf="@+id/profileSchooladdress"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/profileSchooladdress"
+                    android:inputType="textPersonName"
+                    android:hint="Alamat Sekolah"
+                    android:gravity="center"
+                    android:textSize="10sp"
+                    android:ems="10"
+                    android:backgroundTint="@android:color/black"
+                    android:visibility="invisible"
+                    android:id="@+id/editSchooladdress" />
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical|center_horizontal|center">
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical|center_horizontal|center">
+
+                <TextView
+                    android:text="Jurusan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    tools:layout_constraintRight_creator="1"
+                    tools:layout_constraintLeft_creator="1"
+                    android:id="@+id/profileSchoolMajor" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintRight_toRightOf="@+id/profileSchoolMajor"
+                    app:layout_constraintLeft_toLeftOf="@+id/profileSchoolMajor"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/profileSchoolMajor"
+                    android:inputType="textPersonName"
+                    android:hint="Jurusan"
+                    android:gravity="center"
+                    android:textSize="12sp"
+                    android:ems="10"
+                    android:backgroundTint="@android:color/black"
+                    android:visibility="invisible"
+                    android:id="@+id/editSchoolMajor" />
+
+                <TextView
+                    android:text="Alamat Sekolah"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/profileSchoolMajor"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="10sp"
+                    android:id="@+id/profileSchoolClass" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintRight_toRightOf="@+id/profileSchoolClass"
+                    app:layout_constraintLeft_toLeftOf="@+id/profileSchoolClass"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/profileSchoolClass"
+                    android:inputType="textPersonName"
+                    android:hint="Kelas"
+                    android:gravity="center"
+                    android:textSize="10sp"
+                    android:ems="10"
+                    android:backgroundTint="@android:color/black"
+                    android:visibility="invisible"
+                    android:id="@+id/editSchoolClass" />
+            </android.support.constraint.ConstraintLayout>
+        </LinearLayout>
+
+        <TextView
+            android:text="@string/profile_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textProfileName"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            tools:layout_constraintRight_creator="1"
+            tools:layout_constraintLeft_creator="1"
+            app:layout_constraintTop_toBottomOf="@+id/profileSchoolContainer" />
+
+        <TextView
+            android:text="@string/profile_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textProfileName"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:id="@+id/textProfileStatus"
+            android:layout_marginTop="8dp"
+            tools:layout_constraintRight_creator="1"
+            tools:layout_constraintLeft_creator="1" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintRight_toRightOf="@+id/textProfileName"
+            app:layout_constraintLeft_toLeftOf="@+id/textProfileName"
+            app:layout_constraintBaseline_toBaselineOf="@+id/textProfileName"
+            android:inputType="textPersonName"
+            android:hint="Nama"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:ems="10"
+            android:backgroundTint="@android:color/black"
+            android:id="@+id/editProfileName"
+        	android:visibility="invisible" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintRight_toRightOf="@+id/textProfileStatus"
+            app:layout_constraintLeft_toLeftOf="@+id/textProfileStatus"
+            app:layout_constraintBaseline_toBaselineOf="@+id/textProfileStatus"
+            android:inputType="textPersonName"
+            android:hint="Status"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:ems="10"
+            android:backgroundTint="@android:color/black"
+            android:id="@+id/editProfileStatus"
+        	android:visibility="invisible" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <!--Information middle section-->
+    <!--Title-->
+
+    <!--Title End-->
+
+    <!--Sub-title-->
+
+    <!--Sub-title End-->
+
+    <!--Content-->
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:src="@drawable/bt_profile_avatar"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#FF000000"
+        android:layout_centerHorizontal="true"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/topProfileContainer"
+        android:forceHasOverlappingRendering="true"
+        app:layout_constraintBottom_toTopOf="@+id/topProfileContainer" />
+
+    <TabHost
+        android:id="@+id/tabHost"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profileSpacer">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:orientation="vertical"
+            android:id="@+id/linearTabContainer">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/mainButtonColor" />
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="100dp">
+
+                <android.support.constraint.ConstraintLayout
+                    android:id="@+id/tab1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    android:layout_weight="4">
+
+                    <android.support.constraint.ConstraintLayout
+                        android:layout_height="match_parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:id="@+id/subTabContainer"
+                        android:layout_width="wrap_content">
+
+                        <TextView
+                            android:text="@string/profile_detail_title_basic"
+                            android:layout_width="96dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textView9"
+                            android:textColor="@android:color/black"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="16dp"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            android:clickable="true" />
+
+                        <TextView
+                            android:text="@string/profile_detail_title_school"
+                            android:layout_width="96dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textView10"
+                            android:textColor="@android:color/black"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="16dp"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView9"
+                            android:clickable="true" />
+
+                        <TextView
+                            android:text="@string/profile_detail_title_organization"
+                            android:layout_width="96dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textView11"
+                            android:textColor="@android:color/black"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="16dp"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView10"
+                            android:clickable="true" />
+
+                        <TextView
+                            android:text="@string/profile_detail_title_interest"
+                            android:layout_width="96dp"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/black"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="16dp"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView11"
+                            android:id="@+id/subTabInterest"
+                            android:clickable="true" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            app:layout_constraintRight_toLeftOf="@+id/textView9"
+                            app:layout_constraintTop_toTopOf="@+id/textView9"
+                            app:layout_constraintBottom_toBottomOf="@+id/textView9"
+                            android:adjustViewBounds="true"
+                            app:srcCompat="@drawable/bg_profile_sub_tab_highlight"
+                            android:id="@+id/basicInfoHighlight"
+                            android:layout_marginRight="4dp"
+                            android:layout_height="24dp"
+                            android:layout_marginEnd="4dp"
+                            android:visibility="visible" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            app:layout_constraintRight_toLeftOf="@+id/textView10"
+                            app:layout_constraintTop_toTopOf="@+id/textView10"
+                            app:layout_constraintBottom_toBottomOf="@+id/textView10"
+                            android:adjustViewBounds="true"
+                            app:srcCompat="@drawable/bg_profile_sub_tab_highlight"
+                            android:id="@+id/schoolHighlight"
+                            android:layout_marginRight="4dp"
+                            android:layout_height="24dp"
+                            android:layout_marginEnd="4dp"
+                            android:visibility="invisible" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            app:layout_constraintRight_toLeftOf="@+id/textView11"
+                            app:layout_constraintTop_toTopOf="@+id/textView11"
+                            app:layout_constraintBottom_toBottomOf="@+id/textView11"
+                            android:adjustViewBounds="true"
+                            app:srcCompat="@drawable/bg_profile_sub_tab_highlight"
+                            android:id="@+id/organizationHighlight"
+                            android:layout_marginRight="4dp"
+                            android:layout_height="24dp"
+                            android:layout_marginEnd="4dp"
+                            android:visibility="invisible" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            app:layout_constraintRight_toLeftOf="@+id/subTabInterest"
+                            app:layout_constraintTop_toTopOf="@+id/subTabInterest"
+                            app:layout_constraintBottom_toBottomOf="@+id/subTabInterest"
+                            android:adjustViewBounds="true"
+                            app:srcCompat="@drawable/bg_profile_sub_tab_highlight"
+                            android:id="@+id/interestHighlight"
+                            android:layout_marginRight="4dp"
+                            android:layout_height="24dp"
+                            android:layout_marginEnd="4dp"
+                            android:visibility="invisible" />
+                    </android.support.constraint.ConstraintLayout>
+
+                    <FrameLayout
+                        android:layout_width="1dp"
+                        android:layout_height="411dp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintLeft_toRightOf="@+id/subTabContainer"
+                        android:background="@android:color/darker_gray"
+                        android:id="@+id/tab1separator"
+                        android:layout_marginTop="20dp">
+
+                    </FrameLayout>
+
+                    <android.support.constraint.ConstraintLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintLeft_toRightOf="@+id/subTabContainer"
+                        app:layout_constraintRight_toRightOf="parent"
+                        android:id="@+id/basicInfoContainer"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:text="@string/profile_detail_subtitle_basic_birthdate"
+                            android:layout_width="36dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textView12"
+                            android:textColor="@android:color/black"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            android:textSize="10sp"
+                            android:layout_marginTop="16dp"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:text="@string/profile_detail_subtitle_basic_phone"
+                            android:layout_width="36dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textView13"
+                            android:textColor="@android:color/black"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            android:textSize="10sp"
+                            app:layout_constraintTop_toBottomOf="@+id/textView12"
+                            android:layout_marginTop="16dp" />
+
+                        <TextView
+                            android:text="@string/profile_detail_subtitle_basic_email"
+                            android:layout_width="36dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textView14"
+                            android:textColor="@android:color/black"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            android:textSize="10sp"
+                            app:layout_constraintTop_toBottomOf="@+id/textView13"
+                            android:layout_marginTop="16dp" />
+
+                        <TextView
+                            android:id="@+id/textProfileDetailContentBasicBirthdate"
+                            android:text="@string/profile_detail_content_basic_birthdate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/black"
+                            android:textSize="10sp"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginTop="16dp"
+                            app:layout_constraintBaseline_toBaselineOf="@+id/textView12"
+                            app:layout_constraintLeft_toRightOf="@+id/textView12"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                            <EditText
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginTop="16dp"
+                                app:layout_constraintBaseline_toBaselineOf="@+id/textView12"
+                                app:layout_constraintLeft_toRightOf="@+id/textView12"
+                                app:layout_constraintTop_toTopOf="parent"
+                                android:inputType="textPersonName"
+                                android:hint="Edit Tanggal Lahir"
+                                android:textSize="10sp"
+                                android:ems="10"
+                                android:backgroundTint="@android:color/black"
+                                android:visibility="invisible"
+                                android:id="@+id/editProfileDetailContentBasicBirthdate" />
+
+                        <TextView
+                            android:id="@+id/textProfileDetailContentBasicPhone"
+                            android:text="@string/profile_detail_content_basic_phone1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/black"
+                            android:textSize="10sp"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginTop="16dp"
+                            app:layout_constraintBaseline_toBaselineOf="@+id/textView13"
+                            app:layout_constraintLeft_toRightOf="@+id/textView13"
+                            app:layout_constraintTop_toBottomOf="@+id/textProfileDetailContentBasicBirthdate" />
+
+                            <EditText
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginTop="16dp"
+                                app:layout_constraintBaseline_toBaselineOf="@+id/textView13"
+                                app:layout_constraintLeft_toRightOf="@+id/textView13"
+                                app:layout_constraintTop_toBottomOf="@+id/textProfileDetailContentBasicBirthdate"
+                                android:inputType="textPersonName"
+                                android:hint="Edit Nomor Telepon"
+                                android:textSize="10sp"
+                                android:ems="10"
+                                android:backgroundTint="@android:color/black"
+                                android:visibility="invisible"
+                                android:id="@+id/editProfileDetailContentBasicPhone" />
+
+                        <TextView
+                            android:id="@+id/textProfileDetailContentBasicEmail"
+                            android:text="@string/profile_detail_content_basic_email"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/black"
+                            android:textSize="10sp"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginTop="16dp"
+                            app:layout_constraintBaseline_toBaselineOf="@+id/textView14"
+                            app:layout_constraintLeft_toRightOf="@+id/textView14"
+                            app:layout_constraintTop_toBottomOf="@+id/textProfileDetailContentBasicPhone" />
+
+                            <EditText
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginTop="16dp"
+                                app:layout_constraintBaseline_toBaselineOf="@+id/textView14"
+                                app:layout_constraintLeft_toRightOf="@+id/textView14"
+                                app:layout_constraintTop_toBottomOf="@+id/textProfileDetailContentBasicPhone"
+                                android:inputType="textPersonName"
+                                android:hint="Edit Alamat Email"
+                                android:textSize="10sp"
+                                android:ems="10"
+                                android:backgroundTint="@android:color/black"
+                                android:visibility="invisible"
+                                android:id="@+id/editProfileDetailContentBasicEmail" />
+                    </android.support.constraint.ConstraintLayout>
+
+                    <android.support.constraint.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintLeft_toRightOf="@+id/subTabContainer"
+                        app:layout_constraintRight_toRightOf="parent"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:id="@+id/schoolInfoContainer"
+                        android:visibility="invisible">
+
+                        <TextView
+                            android:text="@string/profile_detail_content_school_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            android:textColor="@android:color/black"
+                            android:textSize="10sp"
+                            android:lineSpacingExtra="10dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginEnd="20dp"
+                            android:id="@+id/subTabContententSchool1" />
+
+                            <EditText
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:layout_constraintLeft_toLeftOf="@+id/subTabContententSchool1"
+                                app:layout_constraintTop_toTopOf="@+id/subTabContententSchool1"
+                                android:inputType="textMultiLine"
+                                android:hint="Tuliskan riwayat sekolahmu di sini"
+                                android:textSize="10sp"
+                                android:ems="20"
+                                android:lineSpacingExtra="10dp"
+                                android:textColor="@android:color/black"
+                                android:backgroundTint="@android:color/black"
+                                android:visibility="invisible"
+                                android:id="@+id/subTabFieldContententSchool1" />
+                    </android.support.constraint.ConstraintLayout>
+
+                    <android.support.constraint.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintLeft_toRightOf="@+id/subTabContainer"
+                        app:layout_constraintRight_toRightOf="parent"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:id="@+id/organizationInfoContainer"
+                        android:paddingLeft="10dp"
+                        android:visibility="invisible">
+
+                        <TextView
+                            android:text="@string/profile_detail_content_organization_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            android:textColor="@android:color/black"
+                            android:textSize="10sp"
+                            android:lineSpacingExtra="10dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginEnd="20dp"
+                            android:id="@+id/subTabContententOrganization1" />
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                app:layout_constraintLeft_toLeftOf="@+id/subTabContententOrganization1"
+                                app:layout_constraintTop_toTopOf="@+id/subTabContententOrganization1"
+                                android:inputType="textMultiLine"
+                                android:hint="Tuliskan pengalaman organisasimu di sini"
+                                android:textSize="10sp"
+                                android:ems="20"
+                                android:lineSpacingExtra="10dp"
+                                android:textColor="@android:color/black"
+                                android:backgroundTint="@android:color/black"
+                                android:visibility="invisible"
+                                android:id="@+id/subTabFieldContententOrganization1" />
+
+                    </android.support.constraint.ConstraintLayout>
+
+                    <android.support.constraint.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintLeft_toRightOf="@+id/subTabContainer"
+                        app:layout_constraintRight_toRightOf="parent"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:id="@+id/hobbyInterestContainer"
+                        android:visibility="invisible"
+                        android:paddingStart="10dp">
+
+                        <TextView
+                            android:text="@string/profile_detail_content_organization_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            android:textColor="@android:color/black"
+                            android:textSize="10sp"
+                            android:lineSpacingExtra="10dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginEnd="20dp"
+                            android:id="@+id/subTabContententInterest" />
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                app:layout_constraintLeft_toLeftOf="@+id/subTabContententInterest"
+                                app:layout_constraintTop_toTopOf="@+id/subTabContententInterest"
+                                android:inputType="textMultiLine"
+                                android:hint="Tuliskan hobi serta hal-hal yang menarik bagimu di sini"
+                                android:textSize="10sp"
+                                android:ems="20"
+                                android:lineSpacingExtra="10dp"
+                                android:textColor="@android:color/black"
+                                android:backgroundTint="@android:color/black"
+                                android:visibility="invisible"
+                                android:id="@+id/subTabFieldContententInterest" />
+                    </android.support.constraint.ConstraintLayout>
+
+                </android.support.constraint.ConstraintLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab2"
+                    android:layout_width="match_parent"
+                    android:weightSum="4"
+                    android:orientation="horizontal"
+                    android:layout_height="290dp">
+
+                    <android.support.constraint.ConstraintLayout
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_width="160dp"
+                        android:background="@android:color/white">
+
+                        <TextView
+                            android:text="Senin"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/scheduleMonday"
+                            android:textColor="@android:color/black"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="16dp"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            android:clickable="true"
+                            android:layout_width="80dp" />
+
+                        <TextView
+                            android:text="Selasa"
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/scheduleTuesday"
+                            android:textColor="@android:color/black"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="16dp"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/scheduleMonday"
+                            android:clickable="true" />
+
+                        <TextView
+                            android:text="Rabu"
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/scheduleWednesday"
+                            android:textColor="@android:color/black"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="16dp"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/scheduleTuesday"
+                            android:clickable="true" />
+
+                        <TextView
+                            android:text="Kamis"
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/black"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="16dp"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/scheduleWednesday"
+                            android:id="@+id/scheduleThursday"
+                            android:clickable="true" />
+
+                        <TextView
+                            android:text="Jumat"
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/black"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="16dp"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/scheduleThursday"
+                            android:id="@+id/scheduleFriday"
+                            android:clickable="true" />
+
+                        <TextView
+                            android:text="Sabtu"
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/black"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="16dp"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/scheduleFriday"
+                            android:id="@+id/scheduleSaturday"
+                            android:clickable="true" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            app:layout_constraintRight_toLeftOf="@+id/scheduleMonday"
+                            app:layout_constraintTop_toTopOf="@+id/scheduleMonday"
+                            app:layout_constraintBottom_toBottomOf="@+id/scheduleMonday"
+                            android:adjustViewBounds="true"
+                            app:srcCompat="@drawable/bg_profile_sub_tab_highlight"
+                            android:id="@+id/mondayHighlight"
+                            android:layout_marginRight="4dp"
+                            android:layout_height="16dp"
+                            android:layout_marginEnd="4dp"
+                            android:visibility="visible" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            app:layout_constraintRight_toLeftOf="@+id/scheduleTuesday"
+                            app:layout_constraintTop_toTopOf="@+id/scheduleTuesday"
+                            app:layout_constraintBottom_toBottomOf="@+id/scheduleTuesday"
+                            android:adjustViewBounds="true"
+                            app:srcCompat="@drawable/bg_profile_sub_tab_highlight"
+                            android:id="@+id/tuesdayHighlight"
+                            android:layout_marginRight="4dp"
+                            android:layout_height="16dp"
+                            android:layout_marginEnd="4dp"
+                            android:visibility="invisible" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            app:layout_constraintRight_toLeftOf="@+id/scheduleWednesday"
+                            app:layout_constraintTop_toTopOf="@+id/scheduleWednesday"
+                            app:layout_constraintBottom_toBottomOf="@+id/scheduleWednesday"
+                            android:adjustViewBounds="true"
+                            app:srcCompat="@drawable/bg_profile_sub_tab_highlight"
+                            android:id="@+id/wednesdayHighlight"
+                            android:layout_marginRight="4dp"
+                            android:layout_height="16dp"
+                            android:layout_marginEnd="4dp"
+                            android:visibility="invisible" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            app:layout_constraintRight_toLeftOf="@+id/scheduleThursday"
+                            app:layout_constraintTop_toTopOf="@+id/scheduleThursday"
+                            app:layout_constraintBottom_toBottomOf="@+id/scheduleThursday"
+                            android:adjustViewBounds="true"
+                            app:srcCompat="@drawable/bg_profile_sub_tab_highlight"
+                            android:id="@+id/thursdayHighlight"
+                            android:layout_marginRight="4dp"
+                            android:layout_height="16dp"
+                            android:layout_marginEnd="4dp"
+                            android:visibility="invisible" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            app:layout_constraintRight_toLeftOf="@+id/scheduleFriday"
+                            app:layout_constraintTop_toTopOf="@+id/scheduleFriday"
+                            app:layout_constraintBottom_toBottomOf="@+id/scheduleFriday"
+                            android:adjustViewBounds="true"
+                            app:srcCompat="@drawable/bg_profile_sub_tab_highlight"
+                            android:id="@+id/fridayHighlight"
+                            android:layout_marginRight="4dp"
+                            android:layout_height="16dp"
+                            android:layout_marginEnd="4dp"
+                            android:visibility="invisible" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            app:layout_constraintRight_toLeftOf="@+id/scheduleSaturday"
+                            app:layout_constraintTop_toTopOf="@+id/scheduleSaturday"
+                            app:layout_constraintBottom_toBottomOf="@+id/scheduleSaturday"
+                            android:adjustViewBounds="true"
+                            app:srcCompat="@drawable/bg_profile_sub_tab_highlight"
+                            android:id="@+id/saturdayHighlight"
+                            android:layout_marginRight="4dp"
+                            android:layout_height="16dp"
+                            android:layout_marginEnd="4dp"
+                            android:visibility="invisible" />
+
+                        <FrameLayout
+                            android:layout_width="1dp"
+                            android:layout_height="274dp"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            android:layout_marginTop="10dp"
+                            android:background="@android:color/darker_gray">
+
+                        </FrameLayout>
+
+                    </android.support.constraint.ConstraintLayout>
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:background="@android:color/white">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical" >
+
+                            <TableLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginRight="20dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginBottom="10dp">
+
+                                    <TextView
+                                        android:text="0th"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/scheduleNumber0"
+                                        android:layout_marginRight="20dp"
+                                        android:layout_marginEnd="20dp" />
+
+                                    <TextView
+                                        android:text="Matematika"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/scheduleSubject0" />
+                                </TableRow>
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginRight="20dp"
+                                    android:layout_marginTop="10dp">
+
+                                    <TextView
+                                        android:text="-"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/scheduleNumberPeriod0"
+                                        android:layout_marginRight="20dp"
+                                        android:layout_marginEnd="20dp" />
+
+                                    <TextView
+                                        android:text="-"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/scheduleSubjectPeriod0" />
+                                </TableRow>
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginRight="20dp"
+                                    android:layout_marginTop="10dp">
+
+                                    <TextView
+                                        android:text="1st"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/scheduleNumber1"
+                                        android:layout_marginRight="20dp"
+                                        android:layout_marginEnd="20dp" />
+
+                                    <TextView
+                                        android:text="Matematika"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/scheduleSubject1" />
+                                </TableRow>
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginRight="20dp"
+                                    android:layout_marginTop="10dp">
+
+                                    <TextView
+                                        android:text="2nd"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/scheduleNumber2"
+                                        android:layout_marginRight="20dp"
+                                        android:layout_marginEnd="20dp" />
+
+                                    <TextView
+                                        android:text="Matematika"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/scheduleSubject2" />
+                                </TableRow>
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginRight="20dp"
+                                    android:layout_marginTop="10dp">
+
+                                    <TextView
+                                        android:text="3rd"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/scheduleNumber3"
+                                        android:layout_marginRight="20dp"
+                                        android:layout_marginEnd="20dp" />
+
+                                    <TextView
+                                        android:text="Bahasa Jawa"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/scheduleSubject3" />
+                                </TableRow>
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginRight="20dp"
+                                    android:layout_marginTop="10dp">
+
+                                    <TextView
+                                        android:text="-"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/scheduleNumberPeriod1"
+                                        android:layout_marginRight="20dp"
+                                        android:layout_marginEnd="20dp" />
+
+                                    <TextView
+                                        android:text="-"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/scheduleSubjectPeriod1" />
+                                </TableRow>
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginRight="20dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginBottom="10dp" >
+
+                                    <TextView
+                                        android:text="4th"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/scheduleNumber4"
+                                        android:layout_marginRight="20dp"
+                                        android:layout_marginEnd="20dp" />
+
+                                    <TextView
+                                        android:text="Bahasa Indonesia"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/scheduleSubject4" />
+                                </TableRow>
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginRight="20dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginBottom="10dp" >
+
+                                    <TextView
+                                        android:text="5th"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/scheduleNumber5"
+                                        android:layout_marginRight="20dp"
+                                        android:layout_marginEnd="20dp" />
+
+                                    <TextView
+                                        android:text="Fisika"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/scheduleSubject5" />
+                                </TableRow>
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginRight="20dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginBottom="10dp" >
+
+                                    <TextView
+                                        android:text="6th"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/scheduleNumber6"
+                                        android:layout_marginRight="20dp"
+                                        android:layout_marginEnd="20dp" />
+
+                                    <TextView
+                                        android:text="Fisika"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/scheduleSubject6" />
+                                </TableRow>
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginRight="20dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginBottom="10dp" >
+
+                                    <TextView
+                                        android:text="-"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/scheduleNumberPeriod2"
+                                        android:layout_marginRight="20dp"
+                                        android:layout_marginEnd="20dp" />
+
+                                    <TextView
+                                        android:text="-"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/scheduleSubjectPeriod2" />
+                                </TableRow>
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginRight="20dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginBottom="10dp" >
+
+                                    <TextView
+                                        android:text="7th"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/scheduleNumber7"
+                                        android:layout_marginRight="20dp"
+                                        android:layout_marginEnd="20dp" />
+
+                                    <TextView
+                                        android:text="Bahasa Inggris"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/scheduleSubject7" />
+                                </TableRow>
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginRight="20dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginBottom="10dp" >
+
+                                    <TextView
+                                        android:text="8th"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/scheduleNumber8"
+                                        android:layout_marginRight="20dp"
+                                        android:layout_marginEnd="20dp" />
+
+                                    <TextView
+                                        android:text="Bahasa Inggris"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/scheduleSubject8" />
+                                </TableRow>
+                            </TableLayout>
+                        </LinearLayout>
+                    </ScrollView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab3"
+                    android:layout_width="match_parent"
+                    android:layout_height="290dp"
+                    android:weightSum="7"
+                    android:orientation="horizontal">
+
+                    <android.support.constraint.ConstraintLayout
+                        android:layout_width="160dp"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:text="Sejarah"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginStart="20dp"
+                            android:id="@+id/subTabSubject1" />
+
+                        <TextView
+                            android:text="Matematika"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintTop_toBottomOf="@+id/subTabSubject1"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginStart="20dp"
+                            android:id="@+id/subTabSubject2" />
+
+                        <TextView
+                            android:text="Bahasa Indonesia"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintTop_toBottomOf="@+id/subTabSubject2"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginStart="20dp"
+                            android:id="@+id/subTabSubject3" />
+
+                        <TextView
+                            android:text="PKn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintTop_toBottomOf="@+id/subTabSubject3"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginStart="20dp"
+                            android:id="@+id/subTabSubject4" />
+
+                        <TextView
+                            android:text="Kimia"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintTop_toBottomOf="@+id/subTabSubject4"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginStart="20dp"
+                            android:id="@+id/subTabSubject5" />
+
+                        <TextView
+                            android:text="Fisika"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintTop_toBottomOf="@+id/subTabSubject5"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginStart="20dp"
+                            android:id="@+id/subTabSubject6" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="16dp"
+                            app:layout_constraintTop_toTopOf="@+id/subTabSubject1"
+                            app:layout_constraintBottom_toBottomOf="@+id/subTabSubject1"
+                            app:layout_constraintRight_toLeftOf="@+id/subTabSubject1"
+                            app:srcCompat="@drawable/bg_profile_sub_tab_highlight"
+                            android:id="@+id/subTabSubjectHighlight1" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="16dp"
+                            app:layout_constraintTop_toTopOf="@+id/subTabSubject2"
+                            app:layout_constraintBottom_toBottomOf="@+id/subTabSubject2"
+                            app:layout_constraintRight_toLeftOf="@+id/subTabSubject2"
+                            android:visibility="invisible"
+                            app:srcCompat="@drawable/bg_profile_sub_tab_highlight"
+                            android:id="@+id/subTabSubjectHighlight2" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="16dp"
+                            app:layout_constraintTop_toTopOf="@+id/subTabSubject3"
+                            app:layout_constraintBottom_toBottomOf="@+id/subTabSubject3"
+                            app:layout_constraintRight_toLeftOf="@+id/subTabSubject3"
+                            android:visibility="invisible"
+                            app:srcCompat="@drawable/bg_profile_sub_tab_highlight"
+                            android:id="@+id/subTabSubjectHighlight3" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="16dp"
+                            app:layout_constraintTop_toTopOf="@+id/subTabSubject4"
+                            app:layout_constraintBottom_toBottomOf="@+id/subTabSubject4"
+                            app:layout_constraintRight_toLeftOf="@+id/subTabSubject4"
+                            android:visibility="invisible"
+                            app:srcCompat="@drawable/bg_profile_sub_tab_highlight"
+                            android:id="@+id/subTabSubjectHighlight4" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="16dp"
+                            app:layout_constraintTop_toTopOf="@+id/subTabSubject5"
+                            app:layout_constraintBottom_toBottomOf="@+id/subTabSubject5"
+                            app:layout_constraintRight_toLeftOf="@+id/subTabSubject5"
+                            android:visibility="invisible"
+                            app:srcCompat="@drawable/bg_profile_sub_tab_highlight"
+                            android:id="@+id/subTabSubjectHighlight5" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="16dp"
+                            app:layout_constraintTop_toTopOf="@+id/subTabSubject6"
+                            app:layout_constraintBottom_toBottomOf="@+id/subTabSubject6"
+                            app:layout_constraintRight_toLeftOf="@+id/subTabSubject6"
+                            android:visibility="invisible"
+                            app:srcCompat="@drawable/bg_profile_sub_tab_highlight"
+                            android:id="@+id/subTabSubjectHighlight6" />
+
+                        <FrameLayout
+                            android:layout_width="1dp"
+                            android:layout_height="274dp"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            android:layout_marginTop="16dp"
+                            android:background="@android:color/darker_gray">
+
+                        </FrameLayout>
+
+                    </android.support.constraint.ConstraintLayout>
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical" >
+
+                            <TableLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="10dp">
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginBottom="10dp">
+
+                                    <TextView
+                                        android:text="8 Juli"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/textView2"
+                                        android:layout_marginRight="20dp" />
+
+                                    <TextView
+                                        android:text="80"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/textView" />
+                                </TableRow>
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginBottom="10dp">
+
+                                    <TextView
+                                        android:text="18 Juli"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/textView38"
+                                        android:layout_marginRight="20dp" />
+
+                                    <TextView
+                                        android:text="81"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/textView37" />
+                                </TableRow>
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginBottom="10dp">
+
+                                    <TextView
+                                        android:text="28 Juli"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/textView40"
+                                        android:layout_marginRight="20dp" />
+
+                                    <TextView
+                                        android:text="82"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/textView39" />
+                                </TableRow>
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginBottom="10dp">
+
+                                    <TextView
+                                        android:text="8 Agustus"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/textView42"
+                                        android:layout_marginRight="20dp" />
+
+                                    <TextView
+                                        android:text="83"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/textView41" />
+                                </TableRow>
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginBottom="10dp">
+
+                                    <TextView
+                                        android:text="18 Agustus"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/textView44"
+                                        android:layout_marginRight="20dp" />
+
+                                    <TextView
+                                        android:text="84"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/textView43" />
+                                </TableRow>
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginBottom="10dp">
+
+                                    <TextView
+                                        android:text="28 Agustus"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/textView46"
+                                        android:layout_marginRight="20dp" />
+
+                                    <TextView
+                                        android:text="85"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/textView45" />
+                                </TableRow>
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginBottom="10dp">
+
+                                    <TextView
+                                        android:text="8 September"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/textView48"
+                                        android:layout_marginRight="20dp" />
+
+                                    <TextView
+                                        android:text="86"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/textView47" />
+                                </TableRow>
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginBottom="10dp">
+
+                                    <TextView
+                                        android:text="18 September"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/textView50"
+                                        android:layout_marginRight="20dp" />
+
+                                    <TextView
+                                        android:text="87"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/textView49" />
+                                </TableRow>
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginBottom="10dp">
+
+                                    <TextView
+                                        android:text="28 September"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/textView52"
+                                        android:layout_marginRight="20dp" />
+
+                                    <TextView
+                                        android:text="88"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/textView51" />
+                                </TableRow>
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginBottom="10dp">
+
+                                    <TextView
+                                        android:text="8 Oktober"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/textView54"
+                                        android:layout_marginRight="20dp" />
+
+                                    <TextView
+                                        android:text="89"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/textView53" />
+                                </TableRow>
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginBottom="10dp">
+
+                                    <TextView
+                                        android:text="18 Oktober"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/textView56"
+                                        android:layout_marginRight="20dp" />
+
+                                    <TextView
+                                        android:text="90"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/textView55" />
+                                </TableRow>
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginBottom="10dp">
+
+                                    <TextView
+                                        android:text="28 Oktober"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/textView58"
+                                        android:layout_marginRight="20dp" />
+
+                                    <TextView
+                                        android:text="91"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/textView57" />
+                                </TableRow>
+                            </TableLayout>
+                        </LinearLayout>
+                    </ScrollView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_height="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:forceHasOverlappingRendering="true"
+        android:weightSum="6"
+        android:layout_width="0dp"
+        android:visibility="gone"
+        android:id="@+id/buttonSocialMedia">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/bt_profile_social_6"
+            android:id="@+id/imageButton22"
+            android:layout_weight="1"
+            android:scaleType="centerInside"
+            android:adjustViewBounds="true"
+            android:background="@null" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/bt_profile_social_5"
+            android:id="@+id/imageButton21"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside"
+            android:background="@null" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/bt_profile_social_4"
+            android:id="@+id/imageButton20"
+            android:layout_weight="1"
+            android:scaleType="centerInside"
+            android:adjustViewBounds="true"
+            android:background="@null" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/bt_profile_social_3"
+            android:id="@+id/imageButton19"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside"
+            android:background="@null" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/bt_profile_social_2"
+            android:id="@+id/imageButton18"
+            android:layout_weight="1"
+            android:scaleType="centerInside"
+            android:adjustViewBounds="true"
+            android:background="@null" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/bt_profile_social_1"
+            android:id="@+id/imageButton17"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside"
+            android:background="@null" />
+    </LinearLayout>
+
+    <!--Content End-->
+<!--Information middle section End-->
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,267 @@
+<resources>
+    <string name="lorem_ipsum_1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</string>
+    <string name="lorem_ipsum_2">Ut quis tincidunt augue. Vivamus lorem ligula, interdum non orci eget, viverra aliquet nisl. Maecenas ac nulla et ex commodo sagittis.</string>
+    <string name="lorem_ipsum_3">Quisque augue nisi, tempor nec sagittis eu, porttitor vel metus. Etiam vulputate at est suscipit rhoncus. Morbi sit amet enim vitae elit bibendum euismod ut rhoncus dui. Praesent bibendum, dui et venenatis interdum, tellus nisl tincidunt neque, vitae luctus urna arcu ac lorem.</string>
+    <!--*****-->
+    <string name="app_name">Portal Kampus</string>
+    <!--*****-->
+    <string name="main_title">SMAQ App Title</string>
+    <string name="main_profile">Profile</string>
+    <string name="main_profile_edit">Edit Profile</string>
+    <string name="main_profile_background">Edit Profile</string>
+    <string name="main_big_button_learning">e-learning</string>
+    <string name="main_big_button_announcement">school announcement</string>
+    <!--*****-->
+    <string name="profile_school_schoolname">SMU 10</string>
+    <string name="profile_school_major">IPS 1</string>
+    <string name="profile_school_schooladdress">Banguntapan, Bantul</string>
+    <string name="profile_school_class">Kelas 10</string>
+    <string name="profile_name">Orkawas Kamtari</string>
+    <string name="profile_status">[insert status-jomblo/nggak]</string>
+    <!--*****-->
+    <string name="profile_detail_title_basic">Basic Info</string>
+    <string name="profile_detail_title_school">Sekolah</string>
+    <string name="profile_detail_title_organization">Organization &amp; Events</string>
+    <string name="profile_detail_title_interest">Hobbies &amp; Interests</string>
+    <string name="profile_detail_subtitle_basic_birthdate">Lahir</string>
+    <string name="profile_detail_subtitle_basic_phone">Telp</string>
+    <string name="profile_detail_subtitle_basic_email">Email</string>
+    <string name="profile_detail_content_basic_birthdate">17 Agustus 1945</string>
+    <string name="profile_detail_content_basic_phone1">08122869471</string>
+    <string name="profile_detail_content_basic_phone2">0274 2918771</string>
+    <string name="profile_detail_content_basic_email">imel_jimel@yahoo.com</string>
+    <string name="profile_detail_content_school_1">1991 &#8211; 1997 SD Sayidan</string>
+    <string name="profile_detail_content_school_2">1997 &#8211; 2000 SMP 19 Wates</string>
+    <string name="profile_detail_content_school_3">2000 &#8211; 2001 SMA 16 Wonosari</string>
+    <string name="profile_detail_content_school_4">2001 &#8211; 2003 SMA Muhi 2 Sleman</string>
+    <string name="profile_detail_content_organization_1">1998 Juara Basketball Tingkat SMP Wates</string>
+    <string name="profile_detail_content_organization_2">2001 Juara 3 Lomba Adzan Tingkat Provinsi DIY</string>
+    <string name="profile_detail_content_organization_3">2002 Juara 1 Kompetisi Sepakbola Daster Provinsi DIY</string>
+    <string name="profile_detail_content_organization_4">2002 Top Skor Liga Futsal Lapangan Lumpur DIY</string>
+    <!--*****-->
+    <string name="profile_detail_tab_title_interest">Hobbies &amp; Interests</string>
+    <string name="profile_detail_tab_title_schedule">Schedule</string>
+    <string name="profile_detail_tab_title_grade">Grade</string>
+    <string name="profile_detail_tab_title_absence">Absences</string>
+    <string name="profile_detail_tab_content_interest_basketball">Basketball</string>
+    <string name="profile_detail_tab_content_interest_cooking">Cooking</string>
+    <string name="profile_detail_tab_content_interest_photograph">Photograph</string>
+    <string name="profile_detail_tab_content_interest_pes">PES 2010</string>
+    <string name="profile_detail_tab_content_interest_ballet">Ballet</string>
+    <string name="profile_detail_tab_content_interest_zumba">Zumba</string>
+    <string name="profile_detail_tab_content_interest_kangen">Kangen Band</string>
+    <string name="profile_detail_tab_content_interest_foo">Foo Fighters</string>
+    <!--*****-->
+    <string name="profile_detail_tab_content_schedule_subject_period_0">-</string>
+    <string name="profile_detail_tab_content_schedule_subject_period_1">Math</string>
+    <string name="profile_detail_tab_content_schedule_subject_period_2">Math</string>
+    <string name="profile_detail_tab_content_schedule_subject_period_3">PKn</string>
+    <string name="profile_detail_tab_content_schedule_subject_period_4">-</string>
+    <string name="profile_detail_tab_content_schedule_subject_period_5">PKn</string>
+    <string name="profile_detail_tab_content_schedule_subject_period_6">Bahasa Indonesia</string>
+    <string name="profile_detail_tab_content_schedule_subject_period_7">Bahasa Indonesia</string>
+    <!--*****-->
+    <string name="profile_detail_tab_content_grade_subject_1">Sejarah</string>
+    <string name="profile_detail_tab_content_grade_subject_2">Math</string>
+    <string name="profile_detail_tab_content_grade_subject_3">B. Indo</string>
+    <string name="profile_detail_tab_content_grade_subject_4">PKn</string>
+    <string name="profile_detail_tab_content_grade_subject_5">Kimia</string>
+    <string name="profile_detail_tab_content_grade_subject_6">Fisika</string>
+    <string name="profile_detail_tab_content_grade_date_1">March 31st</string>
+    <string name="profile_detail_tab_content_grade_date_2">August 11st</string>
+    <string name="profile_detail_tab_content_grade_date_3">Oct 12nd</string>
+    <string name="profile_detail_tab_content_grade_date_4">June 6th</string>
+    <string name="profile_detail_tab_content_grade_date_5">July 4th</string>
+    <string name="profile_detail_tab_content_grade_date_6">Sept 30th</string>
+    <string name="profile_detail_tab_content_grade_value_1">76</string>
+    <string name="profile_detail_tab_content_grade_value_2">76</string>
+    <string name="profile_detail_tab_content_grade_value_3">76</string>
+    <string name="profile_detail_tab_content_grade_value_4">76</string>
+    <string name="profile_detail_tab_content_grade_value_5">76</string>
+    <string name="profile_detail_tab_content_grade_value_6">76</string>
+    <!--*****-->
+    <string name="learning_title">E-learning</string>
+    <string name="learning_subtitle_fisika">Fisika</string>
+    <string name="learning_subtitle_pspb">PSPB</string>
+    <string name="learning_subtitle_kimia">Kimiaku Temukan</string>
+    <string name="learning_subtitle_akuntansi">Akuntansi</string>
+    <string name="learning_subtitle_antropologi">Antropologi</string>
+    <string name="learning_subtitle_math">Math</string>
+    <string name="learning_subtitle_pmp">PMP</string>
+    <string name="learning_subtitle_indonesia">Bahasa Indonesia</string>
+    <string name="learning_subtitle_english">Bahasa Inggris</string>
+    <!--*****-->
+    <string name="learning_subject_title">Fisika</string>
+    <string name="learning_subject_tab_title_material">Materials</string>
+    <string name="learning_subject_tab_title_tryout">Try Outs</string>
+    <string name="learning_subject_material_favourite">Favourite</string>
+    <string name="learning_subject_tryout_result">See the result</string>
+    <string name="learning_subject_tryout_answer">Answers</string>
+    <string name="learning_subject_title_material_1">Matematika sebagai ilmu perhitungan dasar</string>
+    <string name="learning_subject_title_material_2">Mempelajari kehidupan manusia secara sosiologis</string>
+    <string name="learning_subject_title_material_3">UUD 1945 menjadi konstitusi Indonesia</string>
+    <string name="learning_subject_title_material_4">Lembaga Negara Legislatif Indonesia</string>
+    <string name="learning_subject_title_material_5">Desa Otonom</string>
+    <string name="learning_subject_title_material_6">Pancasila sebagai ideologi unik</string>
+    <string name="learning_subject_title_tryout_1">Tryout Matematika Alogaritma dan Aljabar untuk kelas XII IPA</string>
+    <string name="learning_subject_title_tryout_2">Tryout Akuntansi dan Ekonomi untuk kelas XII IPS</string>
+    <string name="learning_subject_title_tryout_3">Tryout Antropologi dan Sosiologi untuk kelas XII IPS</string>
+    <string name="learning_subject_title_tryout_4">Tryout Fisika untuk kelas XII IPA</string>
+    <string name="learning_subject_title_tryout_5">Tryout Bahasa Indonesia untuk kelas XII semua jurusan</string>
+    <string name="learning_subject_title_tryout_6">Tryout Bahasa Inggris untuk kelas XII semua jurusan</string>
+    <!--*****-->
+    <string name="news_title">School News</string>
+    <string name="news_tab_title_all">All</string>
+    <string name="news_tab_title_upcoming">Upcoming</string>
+    <string name="news_tab_title_favourite">Favourites</string>
+    <string name="news_subtitle_pensi">Pensi Lustrum</string>
+    <string name="news_subtitle_holiday">Go Holiday for a lil\' Raid and Relaxation</string>
+    <string name="news_subtitle_aleplaners">Aleplaners, the Other Kind of Ship</string>
+    <string name="news_subtitle_sighfree">Sighfree the Local, Landbbers Abound</string>
+    <string name="news_subtitle_exhibit">New Exhibits at the Greek Museum</string>
+    <string name="news_subtitle_travel">Travel Around the World with a Friend</string>
+    <string name="news_subtitle_admin_pensi">Jeneng Admin</string>
+    <string name="news_subtitle_admin_holiday">Yaroslav Zaitsev</string>
+    <string name="news_subtitle_admin_aleplaners">Michael Nashvell</string>
+    <string name="news_subtitle_admin_sighfree">Edvard Norton</string>
+    <string name="news_subtitle_admin_exhibit">Kristian Dong</string>
+    <string name="news_subtitle_admin_travel">Erick Woodsen</string>
+    <string name="news_subtitle_content_pensi">SMU 10 Banguntapan</string>
+    <string name="news_subtitle_content_holiday">But I must explain to you how this mistaken idea of denouncing pleasure and praising&#8230;</string>
+    <string name="news_subtitle_content_aleplaners">Any very does cool thet a goes no as are boot jacky fire ship a pleasure and tools</string>
+    <string name="news_subtitle_content_sighfree">\'\'</string>
+    <string name="news_subtitle_content_exhibit">\'\'</string>
+    <string name="news_subtitle_content_travel">To take a trivial example, which of us ever undertakes laborious physical exercise, except&#8230;</string>
+    <string name="news_article_title">Pensi Lustrum SMU 10 Banguntapan</string>
+    <!--*****-->
+    <string name="login_title">Ekspresikan Mudamu dengan SMAQ</string>
+    <string name="login_field_phone_number">Phone (e.g. 08xxx)</string>
+    <string name="login_field_password">Password</string>
+    <string name="login_button_login_now">LOGIN NOW</string>
+    <string name="login_button_facebook">Facebook</string>
+    <string name="login_button_google">Google+</string>
+    <string name="login_sign_up"><u>Don\'t have an account?</u></string>
+    <!--*****-->
+    <string name="register_t_n_c">By Clicking Register, You\'re Agree With Our Terms and Condition.</string>
+    <!--*****-->
+    <string name="register_now_resend"><u>Resend \ </u></string>
+    <string name="register_now_resend_long"> If You didn\'t get the code</string>
+    <!--*****-->
+    <string name="nongkrong_title">Nongkrong</string>
+    <string name="nongkrong_tab_title_all">All</string>
+    <string name="nongkrong_tab_title_same_school">Same School</string>
+    <string name="nongkrong_tab_title_different_school">Different School</string>
+    <string name="nongkrong_tab_content_fashion">Fashion</string>
+    <string name="nongkrong_tab_content_entertainment">Entertainment</string>
+    <string name="nongkrong_tab_content_sports">Sports</string>
+    <string name="nongkrong_tab_content_travelling">Travelling</string>
+    <string name="nongkrong_tab_content_shopping">Shopping</string>
+    <string name="nongkrong_tab_content_science">Science</string>
+    <string name="nongkrong_tab_content_technologies">Technologies</string>
+    <string name="nongkrong_tab_content_finances">Finances</string>
+    <!--*****-->
+    <string name="find_your_team_title">Find Your Team!</string>
+    <string name="find_your_team_tab_title_all">ALL</string>
+    <string name="find_your_team_tab_title_your_post">YOUR POSTS</string>
+    <string name="find_your_team_tab_title_favorites">FAVORITES</string>
+    <string name="find_your_team_tab_button_title_post_it">Post it!</string>
+    <string name="team_banner_small_music">Music</string>
+    <string name="team_banner_small_sport">Sport</string>
+    <string name="team_banner_small_game">Game</string>
+    <string name="team_banner_small_club">Club</string>
+    <string name="team_tab_content_title_1">Dicari: Vokalis yang selalu fales! Untuk band Pscyhedelic keroncong funk.</string>
+    <string name="team_tab_content_title_2">Dicari: kiper dan stirker untuk team futsal yang mengusung gegenpressing</string>
+    <string name="team_tab_content_title_3">But i must wxplain to you how this mistaken idea of denonuci pleasure and praising&#8230;</string>
+    <string name="team_tab_content_title_4">Butuh pemain DOTA 2. Diutamakan farm dan domisili Palbapang.</string>
+    <string name="team_tab_content_title_5">Any very does cool thet a goes no as are boot jacky fire ship a pleasure and tools&#8230;</string>
+    <string name="team_tab_content_title_6">An English club is looking for some members. Free.</string>
+    <string name="team_tab_content_title_7">Grup Orkestra Punk mencari anggota. Diutamakan: pemain triangle</string>
+    <string name="team_tab_content_title_8">Komunitas motor roda satu sedang mencari member sekaligus keluarga baru.</string>
+    <string name="team_tab_content_title_9">Kami komunitas unik yaitu spesialis motor beroda satu yang tidak suka touring dan kumpul&#8230;</string>
+    <string name="team_tab_content_name_1">Mariya Williams</string>
+    <string name="team_tab_content_name_2">Yaroslav Zaitsev</string>
+    <string name="team_tab_content_name_3">Michael Nashvell</string>
+    <string name="team_tab_content_name_4">Edvard Norton</string>
+    <string name="team_tab_content_name_5">Kristian Dong</string>
+    <string name="team_tab_content_name_6">Erick Woodsen</string>
+    <!--*****-->
+    <string name="post_it_field_title"> title </string>
+    <string name="post_it_field_description_here"> description here </string>
+    <!--*****-->
+    <string name="nongkrong_title_sma">SMA</string>
+    <string name="nongkrong_tab_title_nongkrong">NONGKRONG</string>
+    <string name="nongkrong_tab_title_find_your_team">FIND YOUR TEAM</string>
+    <string name="nongkrong_tab_content_title_1">let you to meet up, hangout, or just want to say hi</string>
+    <string name="nongkrong_tab_content_title_2">let you to build a team, find a partner or just share your idea</string>
+    <!--*****-->
+    <string name="promotion_title_sma">SMA</string>
+    <string name="promotion_tab_title_all">ALL</string>
+    <string name="promotion_tab_title_nonton">Nonton bareng Deadpool @Loop Station 29 Feb 2016</string>
+    <string name="promotion_tab_title_dicari">Dicari</string>
+    <string name="promotion_tab_content_1">Konser tunggal Sujud kendang tunggal</string>
+    <string name="promotion_tab_content_2">Endank Soekamti feat Shaggy Dog</string>
+    <string name="promotion_tab_content_3">Nonton bareng film Sri</string>
+    <string name="promotion_tab_content_4">Stand up comei: Garing Mpung</string>
+    <string name="promotion_tab_content_5">Pentas Wayang semalam suntuk: Petruk dadi ratu</string>
+    <string name="promotion_tab_content_date_1">1 Januari</string>
+    <string name="promotion_tab_content_date_2">9 Januari</string>
+    <string name="promotion_tab_content_date_3">18 Januari</string>
+    <string name="promotion_tab_content_date_4">26 Januari</string>
+    <string name="promotion_tab_content_date_5">31 Januari</string>
+    <!--*****-->
+    <string name="anouncement_article_title">School News</string>
+    <string name="anouncement_article_subtitle">PENSI LUSTRUM SMU 10 Bandungtapan</string>
+    <string name="anouncement_article_date">Nov 12, 2016 10:45 pm</string>
+    <string name="anouncement_article_content_1">One of the seven stations of Paris, a dead-end station belongig to the national operator 5NCF. Located in X District The station. \n \n Provides metro and transplantation network of seven station sengers and is the largest station in Europe. Paris grand city. Station belonging to the national operator SNCF. Located in X As a commuter, and further communication from the north-east of France&#8230;</string>
+    <string name="anouncement_article_content_2">Provides metro and transplantation network of seven station sengers and is the largest station in Europe. Paris grand city. Station belonging to the national operator SNCF. Located in X As a commuter, and further communication from the north-east of France&#8230;</string>
+    <string name="anouncement_article_author_name">Sukeman Karno</string>
+    <string name="anouncement_article_author_status">Chief Correspondent</string>
+    <!--*****-->
+    <string name="setting_password_dll_title">Edit Account</string>
+    <string name="setting_content_phone">PHONE</string>
+    <string name="setting_content_username">USERNAME</string>
+    <string name="setting_content_password">PASSWORD</string>
+    <string name="setting_content_confirm_password">CONFIRM PASSWORD</string>
+    <string name="setting_content_email">EMAIL</string>
+    <string name="setting_field_phone">Phone Number</string>
+    <string name="setting_field_username">Name</string>
+    <string name="setting_field_password">password</string>
+    <string name="setting_field_confirm_password">confirm password</string>
+    <string name="setting_field_email">E-mail</string>
+    <string name="setting_password_dll_button_log_out">log out</string>
+    <!--*****-->
+    <string name="trade_title_sma">SMA</string>
+    <string name="trade_tab_title_all">ALL</string>
+    <string name="trade_tab_title_dijual">Dijual: Gitar bekas Kirk Hammett pas recording album Reload</string>
+    <string name="trade_tab_title_dicari">Dicari: Gitar bekas Kirk Hammett pas recording album Reload</string>
+    <string name="trade_tab_content_1">Dijual buku Kimia kelas X Erlangga</string>
+    <string name="trade_tab_content_2">Dijual penggaris 1 meter bekas guru kimia killer</string>
+    <string name="trade_tab_content_3">Dijual dusgrip alias tempat pensil cantik batman warna pink</string>
+    <string name="trade_tab_content_4">Dijual CD e-learning marbel matematika</string>
+    <string name="trade_tab_content_5">Dijual kaset Nirvana Nevermind untuk bayar SPP</string>
+    <string name="trade_tab_content_price_1">12k/TT</string>
+    <string name="trade_tab_content_price_2">1k/TT</string>
+    <string name="trade_tab_content_price_3">100k</string>
+    <string name="trade_tab_content_price_4">10k</string>
+    <string name="trade_tab_content_price_5">15k</string>
+    <string name="title_activity_sample">SampleActivity</string>
+    <!--*****-->
+    <string name="main_challenge_title">Challenge</string>
+    <string name="main_challenge_content">Challenge a team, win the match, and the most important is improve your skill</string>
+    <string name="main_challenge_mvp_title">Student of the Month</string>
+    <string name="main_challenge_mvp_content">Look who has achieved something and vote your own</string>
+    <string name="welcome_title1">SMAQ "Social Media for Smarties"</string>
+    <string name="welcome_title2">Bersosial, Belajar, Berolahraga</string>
+    <string name="welcome_title3">Event Sekolah Dan Extra Kurikuler</string>
+    <string name="welcome_title4">Bersosial Media dengan Aman</string>
+    <string name="welcome_content1">Sosial media khusus buat kamu siswa yang canggih dan berprestasi. Kamu disini bisa share profil dan prestasi, mencari materi pelajaran, dan ngerjain try out pra ujian dengan cara yang Fun dan Asyik.</string>
+    <string name="welcome_content2">Jadi siswa aktif, berwawasan, tapi tetep punya banyak teman? kenapa enggak? dengan SMAQ kamu bisa lakukan semuanya.</string>
+    <string name="welcome_content3">Disini kamu bisa cari temen nongkrong, cari member klub extrakurikuler, acara tanding olahraga antar sekolah dengan fitur keren tanpa ketinggalan event sekolah yang penting buat kamu.</string>
+    <string name="welcome_content4">Social media memang penting, namun kamu juga perlu menghindari resikonya. Dengan SMAQ, kamu mengurangi resiko itu dengan selektif memilih teman sebaya kamu dan tahu di mana dia bersekolah.</string>
+    <string-array name="challenge_type">
+        <item>Club</item>
+        <item>Game</item>
+        <item>Music</item>
+        <item>Sport</item>
+    </string-array>
+</resources>

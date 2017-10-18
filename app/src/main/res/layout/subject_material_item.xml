@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginBottom="20dp"
+        android:weightSum="5">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bt_learning_material_subject_1"
+            android:id="@+id/imageMaterialSubjectTopicThumbnail"
+            android:scaleType="centerInside"
+            android:layout_weight="1"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:weightSum="4">
+
+            <TextView
+                android:text="@string/learning_subject_title_material_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textMaterialSubjectTopicTitle"
+                android:paddingTop="8dp"
+                android:layout_weight="3"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:weightSum="6">
+
+                <ImageButton
+                    android:layout_width="12sp"
+                    android:layout_height="12sp"
+                    android:scaleType="centerInside"
+                    app:srcCompat="@drawable/bt_learning_material_favourite_off"
+                    android:id="@+id/imageButtonFavourite"
+                    android:visibility="invisible"
+                    android:background="@null"
+                    android:layout_weight="1"
+                    android:layout_marginRight="4dp" />
+
+                <TextView
+                    android:text="@string/learning_subject_material_favourite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textFavourite"
+                    android:visibility="invisible"
+                    android:textSize="12sp"
+                    android:layout_weight="5" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

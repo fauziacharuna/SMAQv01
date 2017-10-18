@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_learning_subject"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.smaq.apps.smaqv01.LearningSubjectActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="0dp"
+        android:background="@color/mainMenuButtonBackground"
+        android:theme="?attr/actionBarTheme"
+        android:minHeight="40dp"
+        android:id="@+id/toolbarLearningSubject"
+        android:layout_height="40dp"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/bt_learning_back"
+        android:id="@+id/learningSubjectBackButton"
+        android:background="@null"
+        app:layout_constraintLeft_toLeftOf="@+id/toolbarLearningSubject"
+        app:layout_constraintTop_toTopOf="@+id/learningSubjectTitleText"
+        app:layout_constraintBottom_toBottomOf="@+id/learningSubjectTitleText"
+        android:scaleX="0.5"
+        android:scaleY="0.5" />
+
+    <ImageButton
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        app:srcCompat="@drawable/bt_learning_search"
+        android:id="@+id/learningSubjectSearchButton"
+        android:background="@null"
+        app:layout_constraintRight_toRightOf="@+id/toolbarLearningSubject"
+        app:layout_constraintTop_toTopOf="@+id/toolbarLearningSubject"
+        android:scaleY="0.5"
+        android:scaleX="0.5"
+        android:visibility="invisible" />
+
+    <TextView
+        android:text="@string/learning_subject_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="@+id/toolbarLearningSubject"
+        app:layout_constraintRight_toRightOf="@+id/toolbarLearningSubject"
+        app:layout_constraintTop_toTopOf="@+id/toolbarLearningSubject"
+        android:textColor="@android:color/black"
+        android:id="@+id/learningSubjectTitleText"
+        android:layout_marginTop="10dp"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintLeft_creator="1" />
+
+    <TabHost
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="40dp"
+        android:id="@+id/learningSubjectTab">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp" />
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollIndicators="none"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:id="@+id/tabMaterial"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/material_list_recycler"
+                        tools:listitem="@layout/subject_material_item"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tabTryOut"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/tryout_list_recycler"
+                        tools:listitem="@layout/subject_tryout_item"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent" />
+
+                </LinearLayout>
+
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_quiz_result"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.smaq.apps.smaqv01.QuizResultActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="0dp"
+        android:background="@color/mainMenuButtonBackground"
+        android:theme="?attr/actionBarTheme"
+        android:minHeight="40dp"
+        android:id="@+id/toolbar"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_height="40dp"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintLeft_creator="1">
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/bt_learning_back"
+        android:id="@+id/resultBackButton"
+        android:background="@null"
+        app:layout_constraintLeft_toLeftOf="@+id/toolbar"
+        app:layout_constraintTop_toTopOf="@+id/toolbar"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+        android:scaleX="0.6"
+        android:scaleY="0.6"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp" />
+
+    <TextView
+        android:text="Hasil Tryout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="@+id/toolbar"
+        app:layout_constraintRight_toRightOf="@+id/toolbar"
+        app:layout_constraintTop_toTopOf="@+id/toolbar"
+        android:textColor="@android:color/black"
+        android:id="@+id/resultTitleText"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="80dp"
+        android:paddingRight="80dp"
+        android:singleLine="true"
+        android:maxLines="1"
+        android:scrollHorizontally="true"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintLeft_creator="1" />
+
+    <TextView
+        android:text="score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textSize="64sp"
+        android:textColor="@color/mainButtonColor"
+        android:id="@+id/textScore" />
+
+    <TextView
+        android:text="Your Score is:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/textScore"
+        app:layout_constraintLeft_toLeftOf="@id/textScore"
+        app:layout_constraintRight_toRightOf="@id/textScore"
+        android:id="@+id/textScoreTitle" />
+
+</android.support.constraint.ConstraintLayout>
